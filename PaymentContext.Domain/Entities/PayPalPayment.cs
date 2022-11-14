@@ -1,4 +1,4 @@
-using PaymentContext.Domain.valueObjects;
+using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Domain.Entities
 {
@@ -12,7 +12,7 @@ namespace PaymentContext.Domain.Entities
       decimal totalPaid,
       string payer,
       Document document,
-      string address,
+      Address address,
       Email email) : base(paidDate, expireDate, total, totalPaid, payer, document, address, email)
     {
       TransactionCode = transactionCode;
