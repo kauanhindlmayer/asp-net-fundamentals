@@ -12,8 +12,8 @@ namespace PaymentContext.Domain.Handlers
 {
   public class SubscriptionHandler : 
     Notifiable<Notification>, 
-    IHandler<CreateBoletoSubscriptionCommand>,
-    IHandler<CreatePayPalSubscriptionCommand>
+    IHandler<CreateBoletoSubscriptionCommand>
+    // IHandler<CreatePayPalSubscriptionCommand>
   {
     private readonly IStudentRepository _repository;
     private readonly IEmailService _emailService;
