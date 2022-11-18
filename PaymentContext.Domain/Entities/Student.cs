@@ -43,8 +43,8 @@ namespace PaymentContext.Domain.Entities
       //   .AreEquals(0, subscription.Payments.Count, "Student.Subscription.Payments", "Esta assinatura não possui pagamentos");
       // );
 
-      // if (hasSubscriptionActive)
-      //   AddNotification("Student.Subscriptions", "Você já tem uma assinatura ativa");
+      if (hasSubscriptionActive)
+        AddNotification("Student.Subscriptions", "Você já tem uma assinatura ativa");
     }
   }
 }
